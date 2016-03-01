@@ -53,3 +53,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'mqtt', :git => 'https://github.com/njh/ruby-mqtt.git'
+gem 'acts_as_singleton'

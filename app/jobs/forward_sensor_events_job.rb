@@ -18,9 +18,9 @@ class ForwardSensorEventsJob < ActiveJob::Base
             end
           end
         rescue
-          logger.error "Error during MQTT handling: #{$!}; Pausing 30s and attempting reconnect"
+          logger.error "Error during MQTT handling: #{$!}; Pausing 5s and attempting reconnect"
         end
-        sleep 30
+        sleep 5
       end
     end
   end

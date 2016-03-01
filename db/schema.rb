@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160217015412) do
+ActiveRecord::Schema.define(version: 20160225195157) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -59,6 +59,20 @@ ActiveRecord::Schema.define(version: 20160217015412) do
     t.string   "mqtt_topic"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "global_states", force: :cascade do |t|
+    t.boolean  "armed"
+    t.datetime "last_armed"
+    t.datetime "last_disarmed"
+    t.boolean  "arming"
+    t.boolean  "delayed_entry"
+    t.datetime "last_delayed_entry"
+    t.boolean  "silent_egress_ingress"
+    t.boolean  "bedtime_mode"
+    t.datetime "last_authentication"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
 end

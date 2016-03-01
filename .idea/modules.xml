@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/fireblimp-control.iml" filepath="$PROJECT_DIR$/.idea/fireblimp-control.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/sandbox-rails-ember-1.iml" filepath="$PROJECT_DIR$/.idea/sandbox-rails-ember-1.iml" />
     </modules>
   </component>
 </project>
